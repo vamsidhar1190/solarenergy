@@ -64,5 +64,10 @@
 
 
     </p-sidebar>
-    <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right" class="sidebar-btn"></p-button>
+    <div>
+        <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right" class="sidebar-btn"></p-button>
+       
+        <router-outlet></router-outlet>
+
+    </div>
 </div>

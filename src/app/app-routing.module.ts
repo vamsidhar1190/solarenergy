@@ -5,14 +5,15 @@ import { ChandigarhComponent } from './chandigarh/chandigarh.component';
 
 const routes: Routes = [
   {
-    path:"",component:SidenavComponent
-  },
-  {
+    path:"",component:SidenavComponent,
+    children:[ {
     path:"sidenav",component:SidenavComponent
   },
   {
     path:'chandigarh',component:ChandigarhComponent
-  }
+  }]
+  },
+ 
 ];
 
 @NgModule({
