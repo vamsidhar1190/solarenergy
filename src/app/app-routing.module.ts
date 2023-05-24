@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { ChandigarhComponent } from './chandigarh/chandigarh.component';
 
 const routes: Routes = [
   {
     path:"",component:SidenavComponent
+  },
+  {
+    path:"sidenav",component:SidenavComponent
+  },
+  {
+    path:'chandigarh',component:ChandigarhComponent
   }
 ];
 

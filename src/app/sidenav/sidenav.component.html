@@ -1,10 +1,68 @@
-<div class="card flex justify-content-center">
+<div class="card flex justify-content-center sidebar">
     <p-sidebar [(visible)]="sidebarVisible">
-        <h3>Sidebar</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <div class="side-wrapper-content">
+            <input type="text" placeholder="Search States">
+            <h2>
+                India
+            </h2>
+            <ul>
+                <h2>
+                    Northern Region
+                </h2>
+                <li routerLink="/chandigarh" routerLinkActive="/chandigarh">
+                    Chandigarh
+                </li>
+                <li>
+                    Delhi
+                </li>
+            </ul>
+            <ul>
+                <h2>
+                    Western Region
+                </h2>
+                <li>
+                    Chhattisgarh
+                </li>
+                <li>
+                    Gujarat
+                </li>
+            </ul>
+            <ul>
+                <h2>
+                    Southern Region
+                </h2>
+                <li>
+                    Andhra Pradesh
+                </li>
+                <li>
+                    Telangana
+                </li>
+            </ul>
+            <ul>
+                <h2>
+                    Eastern Region
+                </h2>
+                <li>
+                    Bihar
+                </li>
+                <li>
+                    Jharkhand
+                </li>
+            </ul>
+            <ul>
+                <h2>
+                    North-Eastern Region
+                </h2>
+                <li>
+                    Bihar
+                </li>
+                <li>
+                    Jharkhand
+                </li>
+            </ul>
+        </div>
+
+
     </p-sidebar>
-    <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+    <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right" class="sidebar-btn"></p-button>
 </div>
