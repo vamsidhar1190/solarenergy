@@ -1,4 +1,6 @@
-<div class="card flex justify-content-center sidebar">
+<div class="container">
+
+
     <p-sidebar [(visible)]="sidebarVisible">
         <div class="side-wrapper-content">
             <input type="text" placeholder="Search States">
@@ -64,10 +66,12 @@
 
 
     </p-sidebar>
-    <div>
+    <div class="">
+
         <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right" class="sidebar-btn"></p-button>
        
         <router-outlet></router-outlet>
 
     </div>
+
 </div>
