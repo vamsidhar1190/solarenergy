@@ -8,4 +8,16 @@
 
 @import "/node_modules/primeflex/primeflex.css";
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
 
+.p-button-icon-only{
+    position: absolute;
+left: 288px;
+top: 88px;
+}
