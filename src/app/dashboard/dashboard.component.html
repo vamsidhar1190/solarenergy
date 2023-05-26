@@ -1,3 +1,192 @@
-<p>dashboard works!</p>
+<div class="main-content">
+    <div class="main-information">
+        <div class="information-wrapper-1">
+            <div class="main-data">
+                <div class="emissions-1">
+                    <h4>581199</h4>
+                    <span>tCo2</span>
+                </div>
+                <div>
+                    <p class="emisions">CO2 emissions mitigated</p>
+                    <p class="date-wrap">{{ currentDate }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="information-wrapper">
+            <div class="main-data">
+                <div class="emissions-1">
+                    <h4>581199</h4>
+                    <span>tCo2</span>
+                </div>
+                <div>
+                    <p class="emisions">CO2 emissions mitigated</p>
+                    <p class="date-wrap">{{ currentDate }}</p>
+                </div>
+            </div>
+            <div class="progress-wrapper">
+                <circle-progress class="circle__progress" [percent]="73" [animation]="true" [animationDuration]="300"
+                    [startFromZero]="true" [showInnerStroke]="true" [titleFontSize]="'28'" [titleFontWeight]="'500'"
+                    [unitsFontSize]="'18'" [unitsFontWeight]="'500'" [subtitle]="'Progres1'" [subtitleFontSize]="'12'"
+                    [lazy]="false" [backgroundColor]="'teal'" [backgroundPadding]="8" [radius]="40" [space]="-15"
+                    [maxPercent]="100" [unitsColor]="'#ffffff'" [outerStrokeWidth]="7.5" [outerStrokeColor]="'white'"
+                    [innerStrokeColor]="'teal'" [innerStrokeWidth]="3" [titleColor]="'#ffffff'"
+                    [subtitleColor]="'#ffffff'"></circle-progress>
+                <p class="generation">Of Total RE Generation</p>
+            </div>
+        </div>
+        <div class="information-wrapper">
+            <div class="main-data">
+                <div class="emissions-1">
+                    <h4>581199</h4>
+                    <span>tCo2</span>
+                </div>
+                <div>
+                    <p class="emisions">CO2 emissions mitigated</p>
+                    <p class="date-wrap">{{ currentDate }}</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <circle-progress class="circle__progress" [percent]="50" [animation]="true" [animationDuration]="300"
+                    [startFromZero]="true" [showInnerStroke]="true" [titleFontSize]="'28'" [titleFontWeight]="'500'"
+                    [unitsFontSize]="'18'" [unitsFontWeight]="'500'" [subtitle]="'Progres1'" [subtitleFontSize]="'12'"
+                    [lazy]="false" [backgroundColor]="'teal'" [backgroundPadding]="8" [radius]="40" [space]="-15"
+                    [maxPercent]="100" [unitsColor]="'#ffffff'" [outerStrokeWidth]="7.5" [outerStrokeColor]="'white'"
+                    [innerStrokeColor]="'teal'" [innerStrokeWidth]="3" [titleColor]="'#ffffff'"
+                    [subtitleColor]="'#ffffff'"></circle-progress>
+                <p class="generation">Of Total RE Generation</p>
+            </div>
+        </div>
+        <div class="information-wrapper">
+            <div class="main-data">
+                <div class="emissions-1">
+                    <h4>581199</h4>
+                    <span>tCo2</span>
+                </div>
+                <div>
+                    <p class="emisions">CO2 emissions mitigated</p>
+                    <p class="date-wrap">{{ currentDate }}</p>
+                </div>
+            </div>
+            <div class=" flex justify-content-center capacity-chart" style="width: 50px;">
+                <p-chart type="pie" [data]="data1" [options]="options1" class="Cchart"></p-chart>
+            </div>
+        </div>
+    </div>
+</div>
 
-<h2 >good</h2>
+
+<div class="card generation-ten ms-3">
+    <div id="generation"></div>
+</div>
+<div class="card generation-ten ms-3">
+    <div id="generation1"></div>
+</div>
+
+<div class="card generation-ten ms-3">
+    <div class="buttons-1">
+        <button class="buttons" (click)="pieschart()">All</button>
+        <button class="buttons" (click)="radar1()">Click</button>
+        <button class="buttons" (click)="radar2()">Wind</button>
+        <button class="buttons" (click)="radar3()">Biomass</button>
+        <button class="buttons" (click)="radar4()">Bagase</button>
+        <button class="buttons" (click)="radar5()">Small hydel</button>
+        <button class="buttons" (click)="radar6()">Others</button>
+    </div>
+    <div id="charts"></div>
+</div>
+
+
+
+
+<div class="card generation-ten ms-3">
+    <div class="buttons-1">
+        <button class="buttons" (click)="piescharts()">All</button>
+        <button class="buttons" (click)="pieschart1()">Wind</button>
+         <button class="buttons" (click)="pieschart2()">Wind</button>
+        <button class="buttons" (click)="pieschart3()">Solarground -Mounted</button>
+        <button class="buttons" (click)="pieschart4()">Bio-Power</button>
+        <button class="buttons" (click)="pieschart5()">Solar roofop</button>
+        <button class="buttons" (click)="pieschart6()">Small Hydel</button> 
+    </div>
+    <div id="chart"></div>
+</div>
+
+
+
+
+<div class="card generation-ten ms-3">
+    <div class="buttons-1">
+        <button class="buttons" (click)="capacitys()">All</button>
+        <button class="buttons" (click)="pies1()">wind</button>
+        <button class="buttons" (click)="pies2()">solarground-Mounted</button>
+        <button class="buttons" (click)="pies3()">Bio power</button>
+        <button class="buttons" (click)="pies4()">Solar roofTop</button>
+        <button class="buttons" (click)="pies5()">Small hydel</button>
+    </div>
+    <div id="capa"></div>
+</div>
+
+
+<div class="card generation-ten ms-3">
+    <div id="chart-line"></div>
+  </div>
+
+
+
+<div>
+    <div id="barchart"></div>
+</div>
+
+
+
+
+
+<div class="card generation-ten ms-3">
+    <div class="buttons-1">
+        <button class="buttons" (click)="barcharts()">All</button>
+        <button class="buttons" (click)="pies1()">wind</button>
+        <button class="buttons" (click)="pies2()">solarground-Mounted</button>
+        <button class="buttons" (click)="pies3()">Bio power</button>
+        <button class="buttons" (click)="pies4()">Solar roofTop</button>
+        <button class="buttons" (click)="pies5()">Small hydel</button>
+    </div>
+    <div id="bar"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+ <div>
+ <div class="row mt-5">
+    <div class="col-6">
+      <div id="chart-gauge"></div>
+    </div>
+    <div class="col-6">
+      <div id="chart-pie"></div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-6">
+      <div id="chart-column"></div>
+    </div>
+   
+  </div>
+</div> -->
+
+
+
+
+
+<div id="curve"></div>  

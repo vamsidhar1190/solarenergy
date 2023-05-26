@@ -9,6 +9,11 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChandigarhComponent } from './chandigarh/chandigarh.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ChartModule } from 'primeng/chart';
+import { HighchartsChartModule } from 'highcharts-angular';
+
+
 
 
 @NgModule({
@@ -23,7 +28,10 @@ import { ChandigarhComponent } from './chandigarh/chandigarh.component';
     AppRoutingModule,
     ButtonModule,
     SidebarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgCircleProgressModule.forRoot(),
+    ChartModule,
+    HighchartsChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
