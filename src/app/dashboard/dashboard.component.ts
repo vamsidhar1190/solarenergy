@@ -41,10 +41,61 @@ export class DashboardComponent implements OnInit {
     this.capacitys();
     this.piescharts();
     this.barcharts();
+    this.dataindia()
 
 
   }
+  dataindia() {
+    //@ts-ignore
+    const chart = Highcharts.chart('data', {
+      chart: {
+        type: 'pie'
+      },
+      title: {
+        text: '',
+        align: 'left'
+      },
+      tooltip: {
+        headerFormat: '',
+        pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+          '<b>{point.y} MU</b>' +
+          '<b>({point.z}%)</b><br/>'
+      },
+      series: [{
+        minPointSize: 10,
+        innerSize: '20%',
+        zMin: 0,
+        name: 'countries',
+        borderRadius: 5,
+        data: [{
+          name: 'Northern',
+          y: 1623,
+          z: 51
+        }, {
+          name: 'Western',
+          y: 2213,
+          z: 42
+        }, {
+          name: 'Eastern',
+          y: 442,
+          z: 34
+        },],
+        colors: [
+          '#4caefe',
+          '#3dc3e8',
+          '#2dd9db',
+          '#1feeaf',
+          '#0ff3a0',
+          '#00e887',
 
+        ]
+      }]
+    })
+
+
+
+
+  }
 
   radar1() {
     //@ts-ignore
@@ -2073,5 +2124,539 @@ barcharts(){
 });
 }
 
+barcharts1(){
+   //@ts-ignore
+   Highcharts.chart('bar', {
+    chart: {
+        zoomType: 'xy'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    subtitle: {
+       
+    },
+    xAxis: [{
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        crosshair: true
+    }],
+    yAxis: [{ // Primary yAxis
+        labels: {
+            format: '{value}°C',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: '<b> MW </b>',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[6]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: '',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} mm',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 80,
+        floating: true,
+        backgroundColor:
+        //@ts-ignore
+            Highcharts.defaultOptions.legend.backgroundColor || // theme
+            'rgba(255,255,255,0.25)'
+    },
+    series: [{
+        name: 'Solar',
+        type: 'column',
+        yAxis: 1,
+        data: [ 60.0, 28.6, 32.1,27.6, 28.8, 21.7, 34.1, 29.0, 28.4, 45.6, 51.7, 39.0,
+           ],
+        tooltip: {
+            valueSuffix: 'MW'
+        },
+        color:'red'
+
+    },
+    {
+      name: 'Temperature',
+      type: 'column',
+      data: [90.2,23.5,12.4,45.2,78.4,23.1,23.6,66.77,34.5,23.5,65.4,78.6,],
+      tooltip: {
+          valueSuffix: 'MW'
+      }
+
+    },
+  ]
+});
 
 }
+
+barcharts2(){
+   //@ts-ignore
+   Highcharts.chart('bar', {
+    chart: {
+        zoomType: 'xy'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    subtitle: {
+       
+    },
+    xAxis: [{
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        crosshair: true
+    }],
+    yAxis: [{ // Primary yAxis
+        labels: {
+            format: '{value}°C',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: '<b> MW </b>',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[6]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: '',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} mm',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 80,
+        floating: true,
+        backgroundColor:
+        //@ts-ignore
+            Highcharts.defaultOptions.legend.backgroundColor || // theme
+            'rgba(255,255,255,0.25)'
+    },
+    series: [{
+        name: 'Solar',
+        type: 'column',
+        yAxis: 1,
+        data: [ 27.6, 28.8, 21.7, 34.1, 29.0,60.0, 28.6, 32.1, 28.4, 45.6, 51.7, 39.0,
+           ],
+        tooltip: {
+            valueSuffix: 'MW'
+        },
+        color:'red'
+
+    },
+    {
+      name: 'Temperature',
+      type: 'column',
+      data: [78.4,23.1,23.6,66.77,90.2,23.5,12.4,45.2,34.5,23.5,65.4,78.6,],
+      tooltip: {
+          valueSuffix: 'MW'
+      }
+
+    },
+  ]
+});
+}
+
+barcharts3(){
+  //@ts-ignore
+  Highcharts.chart('bar', {
+    chart: {
+        zoomType: 'xy'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    subtitle: {
+       
+    },
+    xAxis: [{
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        crosshair: true
+    }],
+    yAxis: [{ // Primary yAxis
+        labels: {
+            format: '{value}°C',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: '<b> MW </b>',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[6]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: '',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} mm',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 80,
+        floating: true,
+        backgroundColor:
+        //@ts-ignore
+            Highcharts.defaultOptions.legend.backgroundColor || // theme
+            'rgba(255,255,255,0.25)'
+    },
+    series: [{
+        name: 'Solar',
+        type: 'column',
+        yAxis: 1,
+        data: [  28.6, 32.1, 28.4, 45.6, 51.7, 39.0,27.6, 28.8, 21.7, 34.1, 29.0,60.0,
+           ],
+        tooltip: {
+            valueSuffix: 'MW'
+        },
+        color:'red'
+
+    },
+    {
+      name: 'Temperature',
+      type: 'column',
+      data: [90.2,23.5,12.4,45.2,34.5,23.5,78.4,23.1,23.6,66.77,65.4,78.6],
+      tooltip: {
+          valueSuffix: 'MW'
+      }
+
+    },
+  ]
+});
+}
+
+barcharts4(){
+    //@ts-ignore
+    Highcharts.chart('bar', {
+      chart: {
+          zoomType: 'xy'
+      },
+      title: {
+          text: '',
+          align: 'left'
+      },
+      subtitle: {
+         
+      },
+      xAxis: [{
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+              'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          crosshair: true
+      }],
+      yAxis: [{ // Primary yAxis
+          labels: {
+              format: '{value}°C',
+              style: {
+                //@ts-ignore
+                  color: Highcharts.getOptions().colors[1]
+              }
+          },
+          title: {
+              text: '<b> MW </b>',
+              style: {
+                //@ts-ignore
+                  color: Highcharts.getOptions().colors[6]
+              }
+          }
+      }, { // Secondary yAxis
+          title: {
+              text: '',
+              style: {
+                //@ts-ignore
+                  color: Highcharts.getOptions().colors[0]
+              }
+          },
+          labels: {
+              format: '{value} mm',
+              style: {
+                //@ts-ignore
+                  color: Highcharts.getOptions().colors[0]
+              }
+          },
+          opposite: true
+      }],
+      tooltip: {
+          shared: true
+      },
+      legend: {
+          align: 'left',
+          x: 80,
+          verticalAlign: 'top',
+          y: 80,
+          floating: true,
+          backgroundColor:
+          //@ts-ignore
+              Highcharts.defaultOptions.legend.backgroundColor || // theme
+              'rgba(255,255,255,0.25)'
+      },
+      series: [{
+          name: 'Solar',
+          type: 'column',
+          yAxis: 1,
+          data: [ 39.0,27.6, 28.8, 21.7,28.6, 32.1, 28.4, 45.6, 51.7, 34.1, 29.0,60.0,
+             ],
+          tooltip: {
+              valueSuffix: 'MW'
+          },
+          color:'red'
+  
+      },
+      {
+        name: 'Temperature',
+        type: 'column',
+        data: [90.2,23.5,12.4,45.2,34.5,66.77,65.4,78.6,23.5,78.4,23.1,23.6],
+        tooltip: {
+            valueSuffix: 'MW'
+        }
+  
+      },
+    ]
+  });
+}
+
+barcharts5(){
+   //@ts-ignore
+   Highcharts.chart('bar', {
+    chart: {
+        zoomType: 'xy'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    subtitle: {
+       
+    },
+    xAxis: [{
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        crosshair: true
+    }],
+    yAxis: [{ // Primary yAxis
+        labels: {
+            format: '{value}°C',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: '<b> MW </b>',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[6]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: '',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} mm',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 80,
+        floating: true,
+        backgroundColor:
+        //@ts-ignore
+            Highcharts.defaultOptions.legend.backgroundColor || // theme
+            'rgba(255,255,255,0.25)'
+    },
+    series: [{
+        name: 'Solar',
+        type: 'column',
+        yAxis: 1,
+        data: [  28.4, 45.6, 51.7, 34.1, 29.0,60.0,39.0,27.6, 28.8, 21.7,28.6, 32.1
+           ],
+        tooltip: {
+            valueSuffix: 'MW'
+        },
+        color:'red'
+
+    },
+    {
+      name: 'Temperature',
+      type: 'column',
+      data: [90.2,23.5,12.4,45.2,34.5,23.6,66.77,65.4,78.6,23.5,78.4,23.1],
+      tooltip: {
+          valueSuffix: 'MW'
+      }
+
+    },
+  ]
+});
+}
+
+barcharts6(){
+   //@ts-ignore
+   Highcharts.chart('bar', {
+    chart: {
+        zoomType: 'xy'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    subtitle: {
+       
+    },
+    xAxis: [{
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        crosshair: true
+    }],
+    yAxis: [{ // Primary yAxis
+        labels: {
+            format: '{value}°C',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: '<b> MW </b>',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[6]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: '',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} mm',
+            style: {
+              //@ts-ignore
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 80,
+        floating: true,
+        backgroundColor:
+        //@ts-ignore
+            Highcharts.defaultOptions.legend.backgroundColor || // theme
+            'rgba(255,255,255,0.25)'
+    },
+    series: [{
+        name: 'Solar',
+        type: 'column',
+        yAxis: 1,
+        data: [  28.8, 21.7,28.6, 32.1, 28.4, 45.6, 51.7, 34.1, 29.0,60.0,39.0,27.6,
+           ],
+        tooltip: {
+            valueSuffix: 'MW'
+        },
+        color:'red'
+
+    },
+    {
+      name: 'Temperature',
+      type: 'column',
+      data: [78.6,23.5,78.4,23.1,90.2,23.5,12.4,45.2,34.5,23.6,66.77,65.4,],
+      tooltip: {
+          valueSuffix: 'MW'
+      }
+
+    },
+  ]
+});
+
+}
+}       

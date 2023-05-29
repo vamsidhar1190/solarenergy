@@ -56,7 +56,7 @@
                 <p class="generation">Of Total RE Generation</p>
             </div>
         </div>
-        <div class="information-wrapper">
+        <div class="information-wrapper information-wrapper-last-block ">
             <div class="main-data">
                 <div class="emissions-1">
                     <h4>581199</h4>
@@ -67,8 +67,11 @@
                     <p class="date-wrap">{{ currentDate }}</p>
                 </div>
             </div>
-            <div class=" flex justify-content-center capacity-chart" style="width: 50px;">
-                <p-chart type="pie" [data]="data1" [options]="options1" class="Cchart"></p-chart>
+            <div class=" flex justify-content-center capacity-chart" >
+                <!-- <p-chart type="pie" [data]="data1" [options]="options1" class="Cchart"></p-chart> -->
+                <div id="data"></div>
+
+                
             </div>
         </div>
     </div>
@@ -78,6 +81,8 @@
 <div class="card generation-ten ms-3">
     <div id="generation"></div>
 </div>
+
+
 <div class="card generation-ten ms-3">
     <div id="generation1"></div>
 </div>
@@ -144,49 +149,15 @@
 <div class="card generation-ten ms-3">
     <div class="buttons-1">
         <button class="buttons" (click)="barcharts()">All</button>
-        <button class="buttons" (click)="pies1()">wind</button>
-        <button class="buttons" (click)="pies2()">solarground-Mounted</button>
-        <button class="buttons" (click)="pies3()">Bio power</button>
-        <button class="buttons" (click)="pies4()">Solar roofTop</button>
-        <button class="buttons" (click)="pies5()">Small hydel</button>
-    </div>
+        <button class="buttons" (click)="barcharts1()">wind</button>
+        <button class="buttons" (click)="barcharts2()">Solar</button>
+        <button class="buttons" (click)="barcharts3()">Bio mass</button>
+        <button class="buttons" (click)="barcharts4()">Bagasse</button>
+        <button class="buttons" (click)="barcharts5()">Small hydel</button>
+        <button class="buttons" (click)="barcharts6()">Others</button>
+    </div> 
     <div id="bar"></div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
- <div>
- <div class="row mt-5">
-    <div class="col-6">
-      <div id="chart-gauge"></div>
-    </div>
-    <div class="col-6">
-      <div id="chart-pie"></div>
-    </div>
-  </div>
-  <div class="row mt-5">
-    <div class="col-6">
-      <div id="chart-column"></div>
-    </div>
-   
-  </div>
-</div> -->
-
-
-
 
 
 <div id="curve"></div>  
