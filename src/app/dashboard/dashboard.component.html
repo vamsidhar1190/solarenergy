@@ -128,9 +128,10 @@
             </div>
         </div>
         <div class="Highest-capacity">
-            <div>
+            <div class="Highest-capacity-switch-menu">
+                {{ capacityInput}}
                 <p-inputSwitch [(ngModel)]="checke" (click)="capacityChanges()"></p-inputSwitch>
-               {{ capacityInput}}
+           
             </div>
           
             <div class="highest">
@@ -294,12 +295,13 @@
 </div>
 
 
-<p-calendar selectionMode="range" [showIcon]="true" [minDate]="minDate" [maxDate]="maxDate"  (onSelect)="onDateSelect()"  [(ngModel)]="date"></p-calendar>
 
 
 <div>
     <div class="d-flex m-3">
         <div class="line-data">
+ <p-calendar selectionMode="range" class="p-calendar-data-block" [showIcon]="true" [minDate]="minDate" [maxDate]="maxDate"  (onSelect)="onDateSelect()"  [(ngModel)]="date"></p-calendar>
+
             <div id="curve"></div>
         </div>
         <div class="generation-ten-4 ms-3">

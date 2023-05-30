@@ -3,9 +3,14 @@
     width: 200px;
 
 }
+.header-wrapper-top{
+    height: 70px;
+    background-color: #c3d7fa;
+}
 .header-wrapper-top .image-content-header img{
     width: 100% !important;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 .header-wrapper-top .image-content-header{
     width: 70%;
@@ -16,7 +21,7 @@ color: #222 !important;
 font-size: 17px;
 }
 .header-main-wrapper{
-    background-color: rgb(216, 225, 245);
+    background-color: rgb(236, 241, 253);
 }
 .side-wrapper-content{
     margin-top: 15px;

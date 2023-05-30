@@ -19,7 +19,21 @@
  .p-button-icon-only-imp{
     position: absolute;
 left: 288px;
-top: 78px;
+top: 88px;
+}
+.highcharts-credits{
+    display: none;
+}
+body{
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto !important;
+}
+
+
+.p-calendar-data-block .p-calendar {
+    padding-top: 5px;
+
 }
 
 .capacity-chart .Cchart canvas{
@@ -41,4 +55,9 @@ display: none;
 }
 .information-wrapper-last-block .highcharts-label text{
 // font-size: 2px !important;
+}
+.p-sidebar-header{
+    position: absolute;
+    right: 22px;
+    z-index: 101;
 }
