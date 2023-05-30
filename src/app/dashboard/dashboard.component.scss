@@ -31,7 +31,7 @@
     font-size: 30px;
 }
 .emissions-1 span{
-    margin-top: 15px;
+    margin-top: 11px;
     font-size: 15px;
 }
 .emissions-1 .date-wrap{
@@ -40,7 +40,7 @@
 }
 .emisions {
     margin-bottom: 0px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
 }
 // .capacity-chart{
@@ -49,9 +49,10 @@
 .generation{
     font-size: 13px;
     padding-right: 12px;
+    font-weight: 600;
 }
 .progress-wrapper{
-    margin-top: 10px;
+    margin-top: 16px;
     // margin-right: 13px;
 }
 
@@ -59,7 +60,7 @@
     color: #34b7eb;
     background-color: white;
     border-radius: 10px;
-    padding: 2px 5px;
+    padding: 6px 10px;
     border: 1px solid #34b7eb;
     margin: 5px;
 }
@@ -128,8 +129,8 @@
     position: absolute;
     width: 2px;
     background-color: #ccc;
-    height: 114px;
-    left: 125px;
+    height: 94px;
+    left: 136px;
     bottom: 0px;
 }
 .wind-block{
@@ -145,8 +146,8 @@
     position: absolute;
     width: 2px;
     background-color: #ccc;
-    height: 114px;
-    left: 125px;
+    height: 94px;
+    left: 136px;
     bottom: 0px;
 }
 
@@ -282,7 +283,11 @@
     padding-right: 5px;
 }
 .generation-content p{
-    margin-bottom: 5px ;
+    margin-bottom: 16px ;
+}
+.report-wrapper-1 .report-title{
+    margin-bottom: 45px ;
+
 }
 
 .Wind-day{
@@ -314,6 +319,7 @@
     box-shadow: 2px 2px 2px 2px #ccc;
 }
 .report-wrapper-1{
+    margin-left: 12px;
     width: 32%;
     display: flex;
     align-items: center;
@@ -351,6 +357,8 @@
 
 .generation-ten-2{
     width: 39.5%;
+    box-shadow: 2px 2px 2px 2px #ccc;
+
 }
 .generation-ten-3{
     width: 27%;
@@ -362,7 +370,7 @@
     box-shadow: 2px 2px 2px 2px #ccc;
 }
 .line-data{
-    text-align: right;
+    // text-align: right;
     width: 50%;
     box-shadow: 2px 2px 2px 2px #ccc;
 
@@ -370,5 +378,9 @@
         padding-right: 20px;
     }
    
+}
+.genration-heading{
+    font-weight: bold;
+    padding: 20px;
 }
 

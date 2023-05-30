@@ -80,11 +80,15 @@
 <div class="m-3">
     <div class="d-flex">
         <div class=" generation-ten generation-content-chart">
+          <div class="d-flex justify-content-between p-2">
+            <p class="genration-heading">RE Generation (Tentative)</p>
+
+          </div>
             <div id="generation"></div>
         </div>
         <div class="report-wrapper-1    ">
             <div class="main-data-generation">
-                <p style="color: #cccccc;">Report</p>
+                <p style="color: #cccccc;"  class="report-title">Report</p>
 
                 <div class="generation-block">
                     <div>
@@ -156,11 +160,15 @@
 <div>
     <div class="report-1 m-3">
         <div class=" generation-ten ">
+            <div class="d-flex justify-content-between p-2">
+                <p class="genration-heading">RE Generation</p>
+
+              </div>
             <div id="generation1"></div>
         </div>
         <div class="report-wrapper-1    ">
             <div class="main-data-generation">
-                <p style="color: #cccccc;">Report</p>
+                <p style="color: #cccccc;" class="report-title" >Report</p>
 
                 <div class="generation-block">
                     <div>
@@ -203,53 +211,10 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="report-wrapper">
-            <div class="main-data-generation">
-                <p style="color: #cccccc;">Report</p>
-
-                <div class="generation-block">
-                    <div>
-                        <p>Re Generation</p>
-                        <h5>203490<span>MU</span></h5>
-                    </div>
-                    <div class="isgs-generation-block">
-                        <p>ISGS Generation</p>
-                        <h5>23<span>%</span></h5>
-                    </div>
-                </div>
-                <div class="generation-content">
-                    <div class="Solar-block">
-                        <p>Solar generation</p>
-                        <h5>101079<span>MU</span></h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                                style="width:80%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wind-block">
-                        <p>Wind generation</p>
-                        <h5>72666<span>MU</span> </h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-                                style="width:65%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="other-content">
-                        <p>Other RE generation</p>
-                        <h5>29746<span>MU</span></h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-                                style="width:40%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+ 
 
         <div class="generation-ten-1">
+            <p class="genration-heading text-center text-400">Technology Share</p>
             <div class="buttons-1">
                 <button class="buttons" (click)="pieschart()">All</button>
                 <button class="buttons" (click)="radar1()">Click</button>
@@ -269,6 +234,9 @@
 <div>
     <div class="d-flex m-3">
         <div class=" generation-ten-2">
+            <div class="d-flex justify-content-between p-2">
+                <p class="genration-heading">Installed capacity</p>
+              </div>
             <div class="buttons-1">
                 <button class="buttons" (click)="capacitys()">All</button>
                 <button class="buttons" (click)="pies1()">wind</button>
@@ -281,7 +249,7 @@
         </div>
         <div class="report-wrapper-1    ">
             <div class="main-data-generation">
-                <p style="color: #cccccc;">Report</p>
+                <p style="color: #cccccc;" class="report-title" >Report</p>
 
                 <div class="generation-block">
                     <div>
@@ -324,53 +292,10 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="report-wrapper">
-            <div class="main-data-generation">
-                <p style="color: #cccccc;">Report (as on Mar, 2023)</p>
-
-                <div class="generation-block">
-                    <div>
-                        <p>Installed RE capacity</p>
-                        <h5>125111 <span>MU</span></h5>
-                    </div>
-                    <div class="isgs-generation-block">
-                        <p>ISGS Generation</p>
-                        <h5>18<span>%</span></h5>
-                    </div>
-                </div>
-                <div class="generation-content">
-                    <div class="Solar-block">
-                        <p>Solar Capacity</p>
-                        <h5>66735 <span>MW</span></h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                                style="width:80%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wind-block">
-                        <p>Wind Capacity</p>
-                        <h5>42629 <span>MW</span> </h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-                                style="width:70%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="other-content">
-                        <p>Other RE generation</p>
-                        <h5>15746<span>MW</span></h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-                                style="width:30%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+    
 
         <div class=" generation-ten-3 ">
+            <p class="genration-heading text-center text-400">Technology Share</p>
             <div class="buttons-1">
                 <button class="buttons" (click)="piescharts()">All</button>
                 <button class="buttons" (click)="pieschart1()">Wind</button>
@@ -384,17 +309,21 @@
     </div>
 </div>
 
-
-
-
 <div>
     <div class="d-flex m-3">
         <div class="line-data">
- <p-calendar selectionMode="range" class="p-calendar-data-block" [showIcon]="true" [minDate]="minDate" [maxDate]="maxDate"  (onSelect)="onDateSelect()"  [(ngModel)]="date"></p-calendar>
+            <div class="d-flex justify-content-between">
+                <p class="genration-heading">Capacity utilisation (ISGS projects)</p>
+                <p-calendar selectionMode="range" class="p-calendar-data-block" [showIcon]="true" [minDate]="minDate" [maxDate]="maxDate"  (onSelect)="onDateSelect()"  [(ngModel)]="date" placeholder="select the Date"></p-calendar>
+              </div>
+ 
 
             <div id="curve"></div>
         </div>
         <div class="generation-ten-4 ms-3">
+            <div class="d-flex justify-content-between">
+                <p class="genration-heading">Capacity utilisation (ISGS projects)</p>
+              </div>
             <div class="buttons-1">
                 <button class="buttons" (click)="barcharts()">All</button>
                 <button class="buttons" (click)="barcharts1()">wind</button>
@@ -403,8 +332,37 @@
                 <button class="buttons" (click)="barcharts4()">Bagasse</button>
                 <button class="buttons" (click)="barcharts5()">Small hydel</button>
                 <button class="buttons" (click)="barcharts6()">Others</button>
+                
             </div>
             <div id="bar"></div>
         </div>
     </div>
 </div>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="containe m-3 ">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+     
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2023 Copyrights:
+        <a class="text-white" href="https://ahex.co/"
+           >Ahex Technologies</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->

@@ -112,6 +112,7 @@ public capacityStatus:boolean=false;
     //@ts-ignore
     const chart = Highcharts.chart('charts', {
       chart: {
+        height:250,
         type: 'pie'
       },
       title: {
@@ -172,6 +173,7 @@ public capacityStatus:boolean=false;
     //@ts-ignore
     const chart = Highcharts.chart('charts', {
       chart: {
+        height:250,
         type: 'pie'
       },
       title: {
@@ -232,6 +234,7 @@ public capacityStatus:boolean=false;
     //@ts-ignore
     const chart = Highcharts.chart('charts', {
       chart: {
+        height:250,
         type: 'pie'
       },
       title: {
@@ -292,6 +295,7 @@ public capacityStatus:boolean=false;
     //@ts-ignore
     const chart = Highcharts.chart('charts', {
       chart: {
+        height:250,
         type: 'pie'
       },
       title: {
@@ -352,6 +356,7 @@ public capacityStatus:boolean=false;
     //@ts-ignore
     const chart = Highcharts.chart('charts', {
       chart: {
+        height:250,
         type: 'pie'
       },
       title: {
@@ -408,6 +413,7 @@ public capacityStatus:boolean=false;
     //@ts-ignore
     const chart = Highcharts.chart('charts', {
       chart: {
+        height:250,
         type: 'pie'
       },
       title: {
@@ -963,6 +969,7 @@ public capacityStatus:boolean=false;
     //@ts-ignore
     const chart = Highcharts.chart('charts', {
       chart: {
+        height:250,
         type: 'pie'
       },
       title: {
@@ -1020,6 +1027,7 @@ capacitys(){
   //@ts-ignore
   Highcharts.chart('capa', {
     chart: {
+      height: 300,
         zoomType: 'xy'
     },
     title: {
@@ -1292,15 +1300,7 @@ pies2(){
       }
 
     },
-    //  {
-    //     name: 'All',
-    //     type: 'spline',
-    //     data: [-13.6, -14.9, -5.8, -0.7, 3.1, 13.0, 14.5, 10.8, 5.8,
-    //         -0.7, -11.0, -16.4],
-    //     tooltip: {
-    //         valueSuffix: 'MW'
-    //     }
-    // },
+  
   ]
 });
 }
@@ -1597,6 +1597,7 @@ piescharts() {
   //@ts-ignore
   const chart = Highcharts.chart('chart', {
     chart: {
+      height:250,
       type: 'pie'
     },
     title: {
@@ -1653,6 +1654,7 @@ pieschart1(){
    //@ts-ignore
    const chart = Highcharts.chart('chart', {
     chart: {
+      height:250,
       type: 'pie'
     },
     title: {
@@ -1710,6 +1712,7 @@ pieschart2(){
   //@ts-ignore
   const chart = Highcharts.chart('chart', {
     chart: {
+      height:250,
       type: 'pie'
     },
     title: {
@@ -1767,6 +1770,7 @@ pieschart3(){
   //@ts-ignore
   const chart = Highcharts.chart('chart', {
     chart: {
+      height:250,
       type: 'pie'
     },
     title: {
@@ -1823,6 +1827,7 @@ pieschart4(){
   //@ts-ignore
   const chart = Highcharts.chart('chart', {
     chart: {
+      height:250,
       type: 'pie'
     },
     title: {
@@ -1879,6 +1884,7 @@ pieschart5(){
   //@ts-ignore
   const chart = Highcharts.chart('chart', {
     chart: {
+      height:250,
       type: 'pie'
     },
     title: {
@@ -1936,6 +1942,7 @@ pieschart6(){
   //@ts-ignore
   const chart = Highcharts.chart('chart', {
     chart: {
+      height:250,
       type: 'pie'
     },
     title: {
