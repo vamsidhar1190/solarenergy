@@ -1,6 +1,6 @@
 
 .main-content{
-    padding: 20px;
+    padding: 16px;
 }
 .main-information{
     display: flex;
@@ -160,7 +160,7 @@
 }
 .other-content h5{
     color: #575756;
-    font-size: 26px;
+    font-size: 25px;
 }
 .other-content span{
     color: #575756;
@@ -169,7 +169,7 @@
 
 .wind-block h5{
     color: #009cd8;
-    font-size: 26px;
+    font-size: 25px;
 }
 .wind-block span{
     color: #009cd8;
@@ -177,7 +177,7 @@
 }
 .Solar-block h5{
     color: #ea5813;
-    font-size: 26px;
+    font-size: 25px;
 }
 .Solar-block span{
     color: #ea5813;
@@ -200,13 +200,13 @@
     box-shadow: 2px 2px 2px 2px #ccc;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-left: 40px;
 }
 .highest{
     padding: 20px;
 }
 .highest h6{
-    font-size: 50px;
+    font-size: 26px;
     font-weight: bold;
 }
 .highest h6>span{
@@ -233,7 +233,7 @@
     width: 300px;
     background-color: #ccc;
     height: 2px;
-    left: -20%;
+    left: 0%;
     bottom: 0px;
 }
 .Solar-day{
@@ -241,7 +241,7 @@
 }
 
 .Solar-day h6{
-    font-size: 50px;
+    font-size: 26px;
     font-weight: bold;
     color: #ea5813;
 }
@@ -269,7 +269,7 @@
     width: 300px;
     background-color: #ccc;
     height: 2px;
-    left: -20%;
+    left: 0%;
     bottom: 0px;
 }
 .Highest-capacity-switch-menu{
@@ -277,6 +277,9 @@
     align-items: center;
     gap: 1%;
     padding-top: 15px;
+    padding-top: 15px;
+    justify-content: end;
+    padding-right: 5px;
 }
 .generation-content p{
     margin-bottom: 5px ;
@@ -286,7 +289,7 @@
     padding: 20px;
 }
 .Wind-day h6{
-    font-size: 50px;
+    font-size: 26px;
     font-weight: bold;
     color: #009cd8;
 }
@@ -326,9 +329,13 @@
 .report-1{
     display: flex;
 }
+.capacity-chart{
+    width: 168px !important;
+    overflow: hidden;
+}
 
 .generation-ten{
-    width: 44%;
+    width: 39.5%;
     box-shadow: 2px 2px 2px 2px #ccc;
 }
 .report-wrapper{
@@ -339,13 +346,15 @@
 .generation-ten-1{
     width: 27%;
     box-shadow: 2px 2px 2px 2px #ccc;
+    margin-left: 20px;
 }
 
 .generation-ten-2{
-    width: 44%;
+    width: 39.5%;
 }
 .generation-ten-3{
     width: 27%;
+    margin-left: 20px;
     box-shadow: 2px 2px 2px 2px #ccc;
 }
 .generation-ten-4{
