@@ -18,3 +18,36 @@ font-size: 17px;
 .header-main-wrapper{
     background-color: rgb(216, 225, 245);
 }
+.side-wrapper-content{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.side-wrapper-content input{
+    padding: 8px;
+}
+.side-wrapper-content ul li{
+    list-style-type: circle;
+    font-size: 14px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+}
+.side-wrapper-content ul li:hover{
+    color: #918f8f;
+    transform: translateX(10px);
+
+}
+.side-wrapper-content h2{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+
+}
+.side-wrapper-content h2:hover{
+    color: #918f8f;
+    transform: translateX(10px);
+
+}

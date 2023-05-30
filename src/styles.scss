@@ -16,10 +16,10 @@
     font-family: sans-serif;
 }
 
-.p-button-icon-only{
+ .p-button-icon-only-imp{
     position: absolute;
 left: 288px;
-top: 88px;
+top: 78px;
 }
 
 .capacity-chart .Cchart canvas{
@@ -29,15 +29,21 @@ top: 88px;
 }
 .information-wrapper-last-block  .highcharts-container{
     width: 185px !important;
+  
 }
 .information-wrapper-last-block .highcharts-credits{
 display: none;
 }
-.information-wrapper-last-block .highcharts-data-label-connector 
-{
+
+.information-wrapper-last-block  .highcharts-data-labels{
     display: none;
 
+ }
+ .p-sidebar-header {
+    padding: 0px !important;
+    position: absolute;
+    right: 50px;
+top: 20px;
+z-index: 100;
 }
-.information-wrapper-last-block .highcharts-label text{
-// font-size: 2px !important;
-}
+

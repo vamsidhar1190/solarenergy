@@ -1,14 +1,15 @@
 <div class="container">
     <p-sidebar [(visible)]="sidebarVisible">
         <div class="side-wrapper-content">
-            <input type="text" placeholder="Search States">
+            <input type="text" placeholder="Search States..">
             <h2 routerLink="/Dashboard" routerLinkActive="/Dashboard">
                 India
             </h2>
+            <h2>
+                Northern Region
+            </h2>
             <ul>
-                <h2>
-                    Northern Region
-                </h2>
+               
                 <li routerLink="/chandigarh" routerLinkActive="/chandigarh">
                     Chandigarh
                 </li>
@@ -16,10 +17,11 @@
                     Delhi
                 </li>
             </ul>
+            <h2>
+                Western Region
+            </h2>
             <ul>
-                <h2>
-                    Western Region
-                </h2>
+              
                 <li>
                     Chhattisgarh
                 </li>
@@ -27,10 +29,11 @@
                     Gujarat
                 </li>
             </ul>
+            <h2>
+                Southern Region
+            </h2>
             <ul>
-                <h2>
-                    Southern Region
-                </h2>
+              
                 <li>
                     Andhra Pradesh
                 </li>
@@ -38,10 +41,11 @@
                     Telangana
                 </li>
             </ul>
+            <h2>
+                Eastern Region
+            </h2>
             <ul>
-                <h2>
-                    Eastern Region
-                </h2>
+               
                 <li>
                     Bihar
                 </li>
@@ -49,10 +53,11 @@
                     Jharkhand
                 </li>
             </ul>
+            <h2>
+                North-Eastern Region
+            </h2>
             <ul>
-                <h2>
-                    North-Eastern Region
-                </h2>
+           
                 <li>
                     Bihar
                 </li>
@@ -106,7 +111,7 @@
 
   </div>
 
-        <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right" class="sidebar-btn"></p-button>
+        <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right" class="sidebar-btn p-button-icon-only-imp"></p-button>
 
         <router-outlet></router-outlet>
 
