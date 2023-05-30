@@ -41,7 +41,8 @@ export class DashboardComponent implements OnInit {
     this.capacitys();
     this.piescharts();
     this.barcharts();
-    this.dataindia()
+    this.dataindia();
+   
 
 
   }
@@ -2659,4 +2660,5 @@ barcharts6(){
 });
 
 }
+
 }       

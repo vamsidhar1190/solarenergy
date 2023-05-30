@@ -15,11 +15,11 @@
         <div class="information-wrapper">
             <div class="main-data">
                 <div class="emissions-1">
-                    <h4>581199</h4>
-                    <span>tCo2</span>
+                    <h4>283.0</h4>
+                    <span>MU</span>
                 </div>
                 <div>
-                    <p class="emisions">CO2 emissions mitigated</p>
+                    <p class="emisions">Solar generation</p>
                     <p class="date-wrap">{{ currentDate }}</p>
                 </div>
             </div>
@@ -37,11 +37,11 @@
         <div class="information-wrapper">
             <div class="main-data">
                 <div class="emissions-1">
-                    <h4>581199</h4>
-                    <span>tCo2</span>
+                    <h4>273.7</h4>
+                    <span>MU</span>
                 </div>
                 <div>
-                    <p class="emisions">CO2 emissions mitigated</p>
+                    <p class="emisions">Wind generation</p>
                     <p class="date-wrap">{{ currentDate }}</p>
                 </div>
             </div>
@@ -59,105 +59,256 @@
         <div class="information-wrapper information-wrapper-last-block ">
             <div class="main-data">
                 <div class="emissions-1">
-                    <h4>581199</h4>
-                    <span>tCo2</span>
+                    <h4>125110.6</h4>
+                    <span>MW</span>
                 </div>
                 <div>
-                    <p class="emisions">CO2 emissions mitigated</p>
+                    <p class="emisions">Installed RE Capacity</p>
                     <p class="date-wrap">{{ currentDate }}</p>
                 </div>
             </div>
-            <div class=" flex justify-content-center capacity-chart" >
+            <div class=" flex justify-content-center capacity-chart">
                 <!-- <p-chart type="pie" [data]="data1" [options]="options1" class="Cchart"></p-chart> -->
                 <div id="data"></div>
 
-                
+
             </div>
         </div>
     </div>
 </div>
 
+<div class="m-3">
+    <div class="d-flex">
+        <div class=" generation-ten generation-content-chart">
+            <div id="generation"></div>
+        </div>
+        <div class="report-wrapper-1    ">
+            <div class="main-data-generation">
+                <p style="color: #cccccc;">Report</p>
 
-<div class="card generation-ten ms-3">
-    <div id="generation"></div>
-</div>
-
-
-<div class="card generation-ten ms-3">
-    <div id="generation1"></div>
-</div>
-
-<div class="card generation-ten ms-3">
-    <div class="buttons-1">
-        <button class="buttons" (click)="pieschart()">All</button>
-        <button class="buttons" (click)="radar1()">Click</button>
-        <button class="buttons" (click)="radar2()">Wind</button>
-        <button class="buttons" (click)="radar3()">Biomass</button>
-        <button class="buttons" (click)="radar4()">Bagase</button>
-        <button class="buttons" (click)="radar5()">Small hydel</button>
-        <button class="buttons" (click)="radar6()">Others</button>
+                <div class="generation-block">
+                    <div>
+                        <p>Re Generation</p>
+                        <h5>16658 <span>MU</span></h5>
+                    </div>
+                    <div class="isgs-generation-block">
+                        <p>ISGS Generation</p>
+                        <h5>32 <span>%</span></h5>
+                    </div>
+                </div>
+                <div class="generation-content">
+                    <div class="Solar-block">
+                        <p>Solar generation</p>
+                        <h5>9785 <span>MU</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                style="width:90%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wind-block">
+                        <p>Wind generation</p>
+                        <h5>6866 <span>MU</span> </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                style="width:60%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-content">
+                        <p>Other RE generation</p>
+                        <h5>742 <span>MU</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                style="width:50%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Highest-capacity">
+            <div class="highest">
+                <h6>805.5 <span>MU</span></h6>
+                <p>Highest RE day</p>
+                <span>26 May,2023</span>
+            </div>
+            <div class="Solar-day">
+                <h6>350.1 <span>MU</span></h6>
+                <p>Highest RE day</p>
+                <span>26 May,2023</span>
+            </div>
+            <div class="Wind-day">
+                <h6>805.5 <span>MU</span></h6>
+                <p>Highest RE day</p>
+                <span>26 May,2023</span>
+            </div>
+        </div>
     </div>
-    <div id="charts"></div>
 </div>
 
+<div>
+    <div class="report-1 m-3">
+        <div class=" generation-ten ms-3">
+            <div id="generation1"></div>
+        </div>
+        <div class="report-wrapper">
+            <div class="main-data-generation">
+                <p style="color: #cccccc;">Report</p>
 
+                <div class="generation-block">
+                    <div>
+                        <p>Re Generation</p>
+                        <h5>203490<span>MU</span></h5>
+                    </div>
+                    <div class="isgs-generation-block">
+                        <p>ISGS Generation</p>
+                        <h5>23<span>%</span></h5>
+                    </div>
+                </div>
+                <div class="generation-content">
+                    <div class="Solar-block">
+                        <p>Solar generation</p>
+                        <h5>101079<span>MU</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                style="width:80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wind-block">
+                        <p>Wind generation</p>
+                        <h5>72666<span>MU</span> </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                style="width:65%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-content">
+                        <p>Other RE generation</p>
+                        <h5>29746<span>MU</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                style="width:40%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-<div class="card generation-ten ms-3">
-    <div class="buttons-1">
-        <button class="buttons" (click)="piescharts()">All</button>
-        <button class="buttons" (click)="pieschart1()">Wind</button>
-         <button class="buttons" (click)="pieschart2()">Wind</button>
-        <button class="buttons" (click)="pieschart3()">Solarground -Mounted</button>
-        <button class="buttons" (click)="pieschart4()">Bio-Power</button>
-        <button class="buttons" (click)="pieschart5()">Solar roofop</button>
-        <button class="buttons" (click)="pieschart6()">Small Hydel</button> 
+        <div class="generation-ten-1 ms-3">
+            <div class="buttons-1">
+                <button class="buttons" (click)="pieschart()">All</button>
+                <button class="buttons" (click)="radar1()">Click</button>
+                <button class="buttons" (click)="radar2()">Wind</button>
+                <button class="buttons" (click)="radar3()">Biomass</button>
+                <button class="buttons" (click)="radar4()">Bagase</button>
+                <button class="buttons" (click)="radar5()">Small hydel</button>
+                <button class="buttons" (click)="radar6()">Others</button>
+            </div>
+            <div id="charts"></div>
+        </div>
     </div>
-    <div id="chart"></div>
 </div>
-
-
-
-
-<div class="card generation-ten ms-3">
-    <div class="buttons-1">
-        <button class="buttons" (click)="capacitys()">All</button>
-        <button class="buttons" (click)="pies1()">wind</button>
-        <button class="buttons" (click)="pies2()">solarground-Mounted</button>
-        <button class="buttons" (click)="pies3()">Bio power</button>
-        <button class="buttons" (click)="pies4()">Solar roofTop</button>
-        <button class="buttons" (click)="pies5()">Small hydel</button>
-    </div>
-    <div id="capa"></div>
-</div>
-
-
-<div class="card generation-ten ms-3">
-    <div id="chart-line"></div>
-  </div>
 
 
 
 <div>
-    <div id="barchart"></div>
+    <div class="d-flex m-3">
+        <div class=" generation-ten-2">
+            <div class="buttons-1">
+                <button class="buttons" (click)="capacitys()">All</button>
+                <button class="buttons" (click)="pies1()">wind</button>
+                <button class="buttons" (click)="pies2()">solarground-Mounted</button>
+                <button class="buttons" (click)="pies3()">Bio power</button>
+                <button class="buttons" (click)="pies4()">Solar roofTop</button>
+                <button class="buttons" (click)="pies5()">Small hydel</button>
+            </div>
+            <div id="capa"></div>
+        </div>
+        <div class="report-wrapper">
+            <div class="main-data-generation">
+                <p style="color: #cccccc;">Report (as on Mar, 2023)</p>
+
+                <div class="generation-block">
+                    <div>
+                        <p>Installed RE capacity</p>
+                        <h5>125111 <span>MU</span></h5>
+                    </div>
+                    <div class="isgs-generation-block">
+                        <p>ISGS Generation</p>
+                        <h5>18<span>%</span></h5>
+                    </div>
+                </div>
+                <div class="generation-content">
+                    <div class="Solar-block">
+                        <p>Solar Capacity</p>
+                        <h5>66735 <span>MW</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                style="width:80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wind-block">
+                        <p>Wind Capacity</p>
+                        <h5>42629 <span>MW</span> </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                style="width:70%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-content">
+                        <p>Other RE generation</p>
+                        <h5>15746<span>MW</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                style="width:30%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" generation-ten-3 ms-3">
+            <div class="buttons-1">
+                <button class="buttons" (click)="piescharts()">All</button>
+                <button class="buttons" (click)="pieschart1()">Wind</button>
+                <button class="buttons" (click)="pieschart2()">Wind</button>
+                <button class="buttons" (click)="pieschart3()">Solarground -Mounted</button>
+                <button class="buttons" (click)="pieschart4()">Bio-Power</button>
+                <button class="buttons" (click)="pieschart5()">Solar roofop</button>
+                <button class="buttons" (click)="pieschart6()">Small Hydel</button>
+            </div>
+            <div id="chart"></div>
+        </div>
+    </div>
 </div>
 
 
 
 
 
-<div class="card generation-ten ms-3">
-    <div class="buttons-1">
-        <button class="buttons" (click)="barcharts()">All</button>
-        <button class="buttons" (click)="barcharts1()">wind</button>
-        <button class="buttons" (click)="barcharts2()">Solar</button>
-        <button class="buttons" (click)="barcharts3()">Bio mass</button>
-        <button class="buttons" (click)="barcharts4()">Bagasse</button>
-        <button class="buttons" (click)="barcharts5()">Small hydel</button>
-        <button class="buttons" (click)="barcharts6()">Others</button>
-    </div> 
-    <div id="bar"></div>
+<div>
+    <div class="d-flex m-3">
+        <div class="line-data">
+            <div id="curve"></div>
+        </div>
+        <div class="generation-ten-4 ms-3">
+            <div class="buttons-1">
+                <button class="buttons" (click)="barcharts()">All</button>
+                <button class="buttons" (click)="barcharts1()">wind</button>
+                <button class="buttons" (click)="barcharts2()">Solar</button>
+                <button class="buttons" (click)="barcharts3()">Bio mass</button>
+                <button class="buttons" (click)="barcharts4()">Bagasse</button>
+                <button class="buttons" (click)="barcharts5()">Small hydel</button>
+                <button class="buttons" (click)="barcharts6()">Others</button>
+            </div>
+            <div id="bar"></div>
+        </div>
+    </div>
 </div>
-
-
-<div id="curve"></div>  

@@ -70,55 +70,269 @@
 
 
 
+.report-wrapper-1{
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.generation-block{
+    display: flex;
+    justify-content: space-around;
+}
+
+.generation-content{
+    display: flex;
+    justify-content: space-around;
+}
+.isgs-generation-block{
+    position: relative;
+}
+.isgs-generation-block::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #ccc;
+    height: 80px;
+    left: -51px;
+    bottom: 0px;
+}
+.generation-block{
+    position: relative;
 
 
 
-    // .highcharts-figure,
-    // .highcharts-data-table table {
-    //     min-width: 360px;
-    //     max-width: 800px;
-    //     margin: 1em auto;
-    // }
+}
+.generation-block::after{
+    content: "";
+    position: absolute;
+    width: 400px;
+    background-color: #ccc;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+}
 
-    // .highcharts-data-table table {
-    //     font-family: Verdana, sans-serif;
-    //     border-collapse: collapse;
-    //     border: 1px solid #ebebeb;
-    //     margin: 10px auto;
-    //     text-align: center;
-    //     width: 100%;
-    //     max-width: 500px;
-    // }
-
-    // .highcharts-data-table caption {
-    //     padding: 1em 0;
-    //     font-size: 1.2em;
-    //     color: #555;
-    // }
-
-    // .highcharts-data-table th {
-    //     font-weight: 600;
-    //     padding: 0.5em;
-    // }
-
-    // .highcharts-data-table td,
-    // .highcharts-data-table th,
-    // .highcharts-data-table caption {
-    //     padding: 0.5em;
-    // }
-
-    // .highcharts-data-table thead tr,
-    // .highcharts-data-table tr:nth-child(even) {
-    //     background: #f8f8f8;
-    // }
-
-    // .highcharts-data-table tr:hover {
-    //     background: #f1f7ff;
-    // }
+.Solar-block{
+    position: relative;
+    padding-top: 15px;
 
 
-// .generation-ten{
-//     width: 50%;
-// }
+}
+
+.Solar-block::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #ccc;
+    height: 93px;
+    left: 125px;
+    bottom: 0px;
+}
+.wind-block{
+    position: relative;
+    padding-top: 15px;
 
 
+}
+
+.wind-block::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #ccc;
+    height: 93px;
+    left: 125px;
+    bottom: 0px;
+}
+
+.report-wrapper .main-data-generation{
+    padding-top: 80px;
+}
+
+.other-content{
+    padding-top: 15px;
+}
+.other-content h5{
+    color: #575756;
+    font-size: 30px;
+}
+.other-content span{
+    color: #575756;
+    font-size: 15px;
+}
+
+.wind-block h5{
+    color: #009cd8;
+    font-size: 30px;
+}
+.wind-block span{
+    color: #009cd8;
+    font-size: 15px;
+}
+.Solar-block h5{
+    color: #ea5813;
+    font-size: 30px;
+}
+.Solar-block span{
+    color: #ea5813;
+    font-size: 15px;
+}
+.generation-block h5{
+    color: #1f3349;
+    font-size: 30px;
+
+}
+.generation-block span{
+    color: #1f3349;
+    font-size: 15px;
+
+}
+.progress{
+    height: 10px;
+}
+.Highest-capacity{
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.highest{
+    padding: 20px;
+}
+.highest h6{
+    font-size: 50px;
+    font-weight: bold;
+}
+.highest h6>span{
+    font-size: 18px;
+    color: #1f3349;
+}
+.highest p{
+    font-size: 14px;
+    color: #1f3349;
+    line-height: 0px;
+    margin: 0px;
+}
+.highest span{
+    font-size: 11px;
+    color: #009cd8;
+    line-height: 40px;
+}
+.highest{
+    position: relative;
+}
+.highest::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    background-color: #ccc;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+}
+.Solar-day{
+    padding: 20px;
+}
+
+.Solar-day h6{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ea5813;
+}
+.Solar-day h6>span{
+    font-size: 18px;
+    color: #ea5813;
+}
+.Solar-day p{
+    font-size: 14px;
+    color: #1f3349;
+    line-height: 0px;
+    margin: 0px;
+}
+.Solar-day span{
+    font-size: 11px;
+    color: #009cd8;
+    line-height: 40px;
+}
+.Solar-day{
+    position: relative;
+}
+.Solar-day::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    background-color: #ccc;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.Wind-day{
+    padding: 20px;
+}
+.Wind-day h6{
+    font-size: 50px;
+    font-weight: bold;
+    color: #009cd8;
+}
+.Wind-day h6>span{
+    font-size: 18px;
+    color: #009cd8;
+}
+.Wind-day p{
+    font-size: 14px;
+    color: #1f3349;
+    line-height: 0px;
+    margin: 0px;
+}
+.Wind-day span{
+    font-size: 11px;
+    color: #009cd8;
+    line-height: 40px;
+}
+
+.generation-content-chart{
+    width: 44%;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.report-wrapper-1{
+    width: 32%;
+}
+.Highest-capacity{
+    width: 27%;
+    margin-left: 20px;
+    
+}
+.report-1{
+    display: flex;
+}
+
+.generation-ten{
+    width: 44%;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.report-wrapper{
+    width: 32%;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.generation-ten-1{
+    width: 27%;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.generation-ten-2{
+    width: 44%;
+}
+.generation-ten-3{
+    width: 27%;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.generation-ten-4{
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.line-data{
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
