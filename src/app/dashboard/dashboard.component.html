@@ -128,6 +128,11 @@
             </div>
         </div>
         <div class="Highest-capacity">
+            <div>
+                <p-inputSwitch [(ngModel)]="checke" (click)="capacityChanges()"></p-inputSwitch>
+               {{ capacityInput}}
+            </div>
+          
             <div class="highest">
                 <h6>805.5 <span>MU</span></h6>
                 <p>Highest RE day</p>
@@ -139,7 +144,7 @@
                 <span>26 May,2023</span>
             </div>
             <div class="Wind-day">
-                <h6>805.5 <span>MU</span></h6>
+                <h6>{{highestCapacity|number}} <span>MU</span></h6>
                 <p>Highest RE day</p>
                 <span>26 May,2023</span>
             </div>
@@ -278,7 +283,6 @@
             <div class="buttons-1">
                 <button class="buttons" (click)="piescharts()">All</button>
                 <button class="buttons" (click)="pieschart1()">Wind</button>
-                <button class="buttons" (click)="pieschart2()">Wind</button>
                 <button class="buttons" (click)="pieschart3()">Solarground -Mounted</button>
                 <button class="buttons" (click)="pieschart4()">Bio-Power</button>
                 <button class="buttons" (click)="pieschart5()">Solar roofop</button>
@@ -290,7 +294,7 @@
 </div>
 
 
-
+<p-calendar selectionMode="range" [showIcon]="true" [minDate]="minDate" [maxDate]="maxDate"  (onSelect)="onDateSelect()"  [(ngModel)]="date"></p-calendar>
 
 
 <div>

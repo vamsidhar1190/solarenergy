@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -12,6 +13,11 @@ import { ChandigarhComponent } from './chandigarh/chandigarh.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ChartModule } from 'primeng/chart';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { InputSwitchModule } from 'primeng/inputswitch';
+import { FormsModule } from '@angular/forms';
+import { CalendarModule } from 'primeng/calendar';
+
+
 
 
 
@@ -32,6 +38,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     NgCircleProgressModule.forRoot(),
     ChartModule,
     HighchartsChartModule,
+    InputSwitchModule,FormsModule,
+    CalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

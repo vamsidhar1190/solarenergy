@@ -23,6 +23,16 @@ export class DashboardComponent implements OnInit {
 
   activeButton: number = 0;
 
+  checke!: boolean;
+
+  public date:any;
+public highestCapacity:number=805.5;
+public capacityStatus:boolean=false;
+  public currentNewDate:Date=new Date();
+   public capacityInput:string='Past 6 Months';
+ public minDate=new Date(this.currentNewDate.getFullYear()-20,this.currentNewDate.getMonth(),this.currentNewDate.getDate())
+ public maxDate=new Date(this.currentNewDate.getFullYear(),this.currentNewDate.getMonth(),this.currentNewDate.getDate()) 
+
   showData(buttonNumber: number) {
     this.activeButton = buttonNumber;
   }
@@ -132,11 +142,7 @@ export class DashboardComponent implements OnInit {
           name: 'Eastern',
           y: 442,
           z: 34
-        }, {
-          name: 'Czech Republic',
-          y: 600,
-          z: 28
-        }, {
+        },  {
           name: 'Southern',
           y: 4568,
           z: 24
@@ -196,11 +202,7 @@ export class DashboardComponent implements OnInit {
           name: 'Eastern',
           y: 1500,
           z: 64
-        }, {
-          name: 'Czech Republic',
-          y: 2000,
-          z: 56
-        }, {
+        },  {
           name: 'Southern',
           y: 3000,
           z: 23
@@ -261,10 +263,6 @@ export class DashboardComponent implements OnInit {
           y: 3000,
           z: 46
         }, {
-          name: 'Czech Republic',
-          y: 4000,
-          z: 65
-        }, {
           name: 'Southern',
           y: 6000,
           z: 32
@@ -324,11 +322,7 @@ export class DashboardComponent implements OnInit {
           name: 'Eastern',
           y: 1567,
           z: 64
-        }, {
-          name: 'Czech Republic',
-          y: 2456,
-          z: 58
-        }, {
+        },  {
           name: 'Southern',
           y: 9876,
           z: 34
@@ -388,11 +382,7 @@ export class DashboardComponent implements OnInit {
           name: 'Eastern',
           y: 500,
           z: 82
-        }, {
-          name: 'Czech Republic',
-          y: 4568,
-          z: 34
-        }, {
+        },  {
           name: 'Southern',
           y: 6784,
           z: 21
@@ -448,11 +438,7 @@ export class DashboardComponent implements OnInit {
           name: 'Eastern',
           y: 2342,
           z: 34
-        }, {
-          name: 'Czech Republic',
-          y: 5432,
-          z: 24
-        }, {
+        },  {
           name: 'Southern',
           y: 6575,
           z: 34
@@ -849,7 +835,7 @@ export class DashboardComponent implements OnInit {
         type: 'spline'
       },
       title: {
-        text: 'Monthly Average Temperature'
+        text: ''
       },
       subtitle: {
         
@@ -863,7 +849,7 @@ export class DashboardComponent implements OnInit {
       },
       yAxis: {
         title: {
-          text: 'Temperature'
+          text: 'MU'
         },
         labels: {
           formatter: function () {
@@ -1007,10 +993,6 @@ export class DashboardComponent implements OnInit {
           name: 'Eastern',
           y: 1156,
           z: 56
-        }, {
-          name: 'Czech Republic',
-          y: 975,
-          z: 26
         }, {
           name: 'Southern',
           y: 247,
@@ -1646,10 +1628,6 @@ piescharts() {
         y: 1156,
         z: 56
       }, {
-        name: 'Czech Republic',
-        y: 975,
-        z: 26
-      }, {
         name: 'Southern',
         y: 247,
         z: 23
@@ -1705,11 +1683,7 @@ pieschart1(){
         name: 'Eastern',
         y: 100,
         z: 13
-      }, {
-        name: 'Czech Republic',
-        y: 2000,
-        z: 63
-      }, {
+      },  {
         name: 'Southern',
         y: 345,
         z: 67
@@ -1767,10 +1741,6 @@ pieschart2(){
         y: 300,
         z: 86
       }, {
-        name: 'Czech Republic',
-        y: 268,
-        z: 47
-      }, {
         name: 'Southern',
         y: 298,
         z: 50
@@ -1827,11 +1797,7 @@ pieschart3(){
         name: 'Eastern',
         y: 890,
         z: 40
-      }, {
-        name: 'Czech Republic',
-        y: 700,
-        z: 56
-      }, {
+      },  {
         name: 'Southern',
         y: 1000,
         z: 96
@@ -1887,10 +1853,6 @@ pieschart4(){
         name: 'Eastern',
         y: 1579,
         z: 56
-      }, {
-        name: 'Czech Republic',
-        y: 600,
-        z: 92
       }, {
         name: 'Southern',
         y: 345,
@@ -1948,10 +1910,6 @@ pieschart5(){
         y: 700,
         z: 45
       }, {
-        name: 'Czech Republic',
-        y: 300,
-        z: 29
-      }, {
         name: 'Southern',
         y: 900,
         z: 89
@@ -2008,10 +1966,6 @@ pieschart6(){
         name: 'Eastern',
         y: 200,
         z: 45
-      }, {
-        name: 'Czech Republic',
-        y: 678,
-        z: 29
       }, {
         name: 'Southern',
         y: 1000,
@@ -2660,5 +2614,91 @@ barcharts6(){
 });
 
 }
+
+public onDateSelect():void{
+  // 
+  if(this.date[1]){
+    let startDate=this.date[0];
+    let endDate=this.date[1];
+      //@ts-ignore
+      const chart = Highcharts.chart('curve', {
+  
+        title: {
+          text: '',
+          align: 'left'
+        },
+  
+        subtitle: {
+          align: 'left'
+        },
+  
+        yAxis: {
+          title: {
+            text: 'MW'
+          }
+        },
+  
+        xAxis: {
+          accessibility: {
+            rangeDescription: 'Range: 2010 to 2020'
+          }
+        },
+  
+        legend: {
+          layout: 'vertical',
+          align: 'right',
+          verticalAlign: 'middle'
+        },
+  
+        plotOptions: {
+          series: {
+            label: {
+              connectorAllowed: false
+            },
+            pointStart: startDate.getFullYear()
+          }
+        },
+  
+        series: [{
+          name: 'Wind',
+          data: [43934, 48656, 65165, 81827, 112143, 142383,
+            171533, 165174, 155157, 161454, 154610]
+        }, {
+          name: 'Solar',
+          data: [24916, 37941, 29742, 29851, 32490, 30282,
+            38121, 36885, 33726, 34243, 31050]
+        },  ],
+  
+        responsive: {
+          rules: [{
+            condition: {
+              maxWidth: 500
+            },
+            chartOptions: {
+              legend: {
+                layout: 'vertical',
+                align: 'center',
+                verticalAlign: 'bottom'
+              }
+            }
+          }]
+        }
+  
+      });
+    
+  }
+  
+}
+public capacityChanges():void{
+  if(this.checke===true){
+    this.capacityInput="Past 12 Months";
+    this.highestCapacity=500.6
+  }else{
+    this.capacityInput="Past 6 Months";
+    this.highestCapacity=805.5
+  }
+  
+}
+
 
 }       
