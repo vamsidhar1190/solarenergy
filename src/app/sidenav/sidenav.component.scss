@@ -56,3 +56,41 @@ font-size: 17px;
     transform: translateX(10px);
 
 }
+// tab responsive starts here
+
+@media only screen and (min-width:768px) and (max-width:1028px){
+    .p-button-icon-only-imp {
+        left: 150px;
+    }
+    .side-wrapper-content {
+        margin-top: 26px;
+    }
+    .side-wrapper-content ul li {
+        font-size: 19px;
+    }
+
+    .side-wrapper-content input {
+        font-size: 20px;
+        width: 200px;
+    }
+    .side-wrapper-content h2 {
+        font-size: 21px;}
+
+}
+// tab responsive ends here
+
+
+// mobile responsive starts here
+@media only screen and (max-width:767px){
+
+    .header-wrapper-top .image-content-header{
+       width: 50%; 
+    }
+    .p-button-icon-only-imp {
+        left: 108px;
+    }
+  
+ 
+    
+}
+// mobile responsive ends here

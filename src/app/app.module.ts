@@ -16,6 +16,7 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { FormsModule } from '@angular/forms';
 import { CalendarModule } from 'primeng/calendar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -39,7 +40,8 @@ import { CalendarModule } from 'primeng/calendar';
     ChartModule,
     HighchartsChartModule,
     InputSwitchModule,FormsModule,
-    CalendarModule
+    CalendarModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

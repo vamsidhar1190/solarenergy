@@ -49,11 +49,48 @@ display: none;
     display: none;
 
 }
-.information-wrapper-last-block .highcharts-label text{
-// font-size: 2px !important;
-}
+
 .p-sidebar-header{
     position: absolute;
     right: 22px;
     z-index: 101;
 }
+
+// tab responsive starts here
+
+@media only screen and (min-width:768px) and (max-width:1028px){
+.p-sidebar-header{
+    top: 15px;
+}
+p-calendar    .ng-trigger{
+    left: -120px !important;
+
+}
+
+}
+// tab responsive ends here
+
+
+// mobile responsive starts here
+@media only screen and (max-width:767px){
+    .p-calendar-data-block .p-calendar {
+        padding-top: 21px;
+    }
+    .side-wrapper-content input {
+        width: 128px;
+    }
+
+    .p-element .p-sidebar-left {
+        width: 12rem !important;
+    }
+    .p-sidebar-header {
+        right: -15px;}
+      
+        p-calendar    .ng-trigger{
+    left: -150px !important;
+
+}
+}
+// mobile responsive ends here
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
