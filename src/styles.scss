@@ -90,6 +90,9 @@ p-calendar    .ng-trigger{
     left: -150px !important;
 
 }
+.capacity-chart .highcharts-series{
+    transform: translate(10px,-5px);
+}
 }
 // mobile responsive ends here
 /* Importing Bootstrap SCSS file. */

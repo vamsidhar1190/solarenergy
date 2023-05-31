@@ -70,6 +70,7 @@
 .report-wrapper-1 {
   padding: 10px;
   justify-content: center;
+  position: relative;
   text-align: center;
   background-color: #fff;
   box-shadow: 2px 2px 2px 2px #ccc;
@@ -98,45 +99,58 @@
 }
 .generation-block {
   position: relative;
+  border-bottom: 2px solid #ccc;
 }
-.generation-block::after {
-  content: "";
-  position: absolute;
-  width: 368px;
-  background-color: #ccc;
-  height: 2px;
-  left: 13px;
-  bottom: 0px;
-}
+// .generation-block::after {
+//   content: "";
+//   position: absolute;
+//   width: 335px;
+//   background-color: #ccc;
+//   height: 2px;
+//   left: 23px;
+//   bottom: 0px;
+// }
 
 .Solar-block {
   position: relative;
   padding: 10px;
 }
 
-.Solar-block::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  background-color: #ccc;
-  height: 94px;
-  left: 136px;
-  bottom: 0px;
-}
+// .Solar-block::before {
+//   content: "";
+//   position: absolute;
+//   width: 2px;
+//   background-color: #ccc;
+//   height: 94px;
+//   left: 136px;
+//   bottom: 0px;
+// }
 .wind-block {
   position: relative;
   padding: 10px;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+
 }
 
-.wind-block::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  background-color: #ccc;
-  height: 94px;
-  left: 136px;
-  bottom: 0px;
-}
+// .wind-block::before {
+//   content: "";
+//   position: absolute;
+//   width: 2px;
+//   background-color: #ccc;
+//   height: 94px;
+//   left: 0px;
+//   bottom: 0px;
+// }
+// .wind-block::after {
+//     content: "";
+//     position: absolute;
+//     width: 2px;
+//     background-color: #ccc;
+//     height: 94px;
+//     right: 0px;
+//     bottom: 0px;
+//   }
 
 .report-wrapper .main-data-generation {
   padding-top: 80px;
@@ -374,7 +388,7 @@
     font-size: 20px;
   }
   .wind-block {
-    padding: 10px 0px 0px 14px;
+    padding: 10px;
   }
   .emisions {
     font-size: 20px;
@@ -501,7 +515,7 @@
   }
   .isgs-generation-block::before {
     left: -28px;
-    bottom: 6px;
+    bottom: 0px;
   }
   .wind-block::before {
     height: 118px;
@@ -630,15 +644,13 @@
   .main-dashboard-wrapper {
     padding: 10px;
   }
-  .capacity-chart {
-    padding-right: 20px;
-  }
+ 
   .report-wrapper-1 .report-title {
     margin-bottom: 25px;
   }
   .isgs-generation-block::before {
     left: -28px;
-    bottom: 6px;
+    bottom: 0px;
   }
   .wind-block::before {
     height: 101px;
